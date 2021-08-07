@@ -1,10 +1,10 @@
 #ifndef LIBA_H
 #define LIBA_H
-namespace LIBA
+namespace LibA
 {
     char* name()
     {
-        return "FunA";
+        return "LibA";
     }
 } // namespace LIBA
 #endif // LIBA_H
