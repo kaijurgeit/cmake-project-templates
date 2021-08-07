@@ -7,17 +7,15 @@ add_library(${PROJECT_NAME})
 
 # Fetch LibA
 include(FetchContent)
-set(FETCHCONTENT_SOURCE_DIR_LIBA, "D:/Code/CMake/Own/LibA")
+set(FETCHCONTENT_SOURCE_DIR_LIBA, "D:/Code/CMake/Own/LibAHeaderOnly")
 FetchContent_Declare(
     LibA
-    # GIT_REPOSITORY ""
-    # CONFIGURE_COMMAND ""
-    # BUILD_COMMAND ""
-    # SOURCE_DIR ${CMAKE_CURRENT_BINARY_DIR}/savedSrc
-    # BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/savedBin
-    DOWNLOAD_COMMAND ${CMAKE_COMMAND} -E make_directory <SOURCE_DIR> <BINARY_DIR>
+    # SOURCE_DIR "${FETCHCONTENT_SOURCE_DIR_LIBA}"
+    # DOWNLOAD_COMMAND ${CMAKE_COMMAND} -E make_directory <SOURCE_DIR> <BINARY_DIR>
 )
 FetchContent_MakeAvailable(LibA)
+
+
 
 message("${liba_SOURCE_DIR}")
 message("${liba_BINARY_DIR}")
