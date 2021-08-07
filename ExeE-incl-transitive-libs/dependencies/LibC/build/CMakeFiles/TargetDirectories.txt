@@ -1,0 +1,6 @@
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/CMakeFiles/LibC.dir
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/CMakeFiles/ALL_BUILD.dir
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/CMakeFiles/ZERO_CHECK.dir
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/dependencies/LibA/CMakeFiles/ALL_BUILD.dir
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/dependencies/LibB/CMakeFiles/LibB.dir
+D:/Code/CMake/Own/ExeE-incl-transitive-libs/dependencies/LibC/build/dependencies/LibB/CMakeFiles/ALL_BUILD.dir

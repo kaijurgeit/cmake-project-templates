@@ -7,3 +7,12 @@ target_include_directories(${PROJECT_NAME}
     PRIVATE include/LibC
     INTERFACE include
 )
+
+add_subdirectory(dependencies/LibA)
+add_subdirectory(dependencies/LibB)
+
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+    LibA
+    LibB
+)

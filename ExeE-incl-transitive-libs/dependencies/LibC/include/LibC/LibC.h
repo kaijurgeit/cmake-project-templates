@@ -1,7 +1,10 @@
 #ifndef LIBC_H
 #define LIBC_H
+#include <string>
+
 namespace LibC
 {
-    char* name();
+    std::string name();
+    std::string dependencies();
 }
 #endif // LIBC_H
