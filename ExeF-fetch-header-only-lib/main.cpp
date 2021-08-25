@@ -7,7 +7,7 @@
 
 int main()
 {
-    std::cout << "[C++.ExeC] main.cpp" << "\n";
-    std::cout << "[C++.ExeC] " << name() << "\n";
-    std::cout << "[C++.ExeC] " << LibA::name() << "\n";
+    std::cout << "[C++.ExeF] main.cpp" << "\n";
+    std::cout << "[C++.ExeF] " << name() << "\n";
+    std::cout << "[C++.ExeF] " << LibA::name() << "\n";
 }
