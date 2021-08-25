@@ -4,6 +4,7 @@
 #include <iostream>
 #include "FunA.h"
 
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 int main()
@@ -13,21 +14,33 @@ int main()
     /*
     * Initialize GLFW window
     */
-   GLFWwindow* window;
+    GLFWwindow* window;
 
-    /* Initialize the library */
+    /* Initialize the GLFW */
+    if (!glfwInit())
+        return -1;
+
+    /* Create a windowed mode window and its OpenGL context */
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if(!window)
+    if (!window)
     {
         glfwTerminate();
         return -1;
     }
-    
+
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
+    
+    /* Initialize the GLAD */
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return -1;
+    } 
+
     /* Loop until the user closes the window */
-    while(!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window))
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
@@ -40,4 +53,6 @@ int main()
     }
 
     glfwTerminate();
+
+    std::cin.get();
 }
