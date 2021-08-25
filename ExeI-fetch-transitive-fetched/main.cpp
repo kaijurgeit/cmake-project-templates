@@ -7,8 +7,8 @@
 
 int main()
 {
-    std::cout << "[C++.ExeI] main.cpp" << "\n";
-    std::cout << "[C++.ExeI] " << name() << "\n";
-    std::cout << "[C++.ExeI] " << LibD::name() << "\n";
-    std::cout << "[C++.ExeI] " << LibD::dependencies() << "\n";
+    std::cout << "[C++.ExeJ] main.cpp" << "\n";
+    std::cout << "[C++.ExeJ] " << name() << "\n";
+    std::cout << "[C++.ExeJ] " << LibD::name() << "\n";
+    std::cout << "[C++.ExeJ] " << LibD::dependencies() << "\n";
 }
