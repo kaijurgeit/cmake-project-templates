@@ -81,11 +81,23 @@ dependencies
 **ExeI**
 
 Fetches a transitive libraries `LibD` which itself fetches Libraries `LibA` and `LibB`.
+```
+ExeI
+...
+dependencies
+└──LibC     (fetched)
+   ├──LibA  (fetched by LibC)
+   └──LibB  (fetched by LibC)
+```
+
 
 **ExeJ**
 
 Fetch online repositories with CMake support: [GLFW](https://github.com/glfw/glfw) and [GLAD](https://github.com/Dav1dde/glad)
-
-**ExeK**
-
-Fetch online cmake repositories without CMake support: [Dear ImGui](https://github.com/ocornut/imgui)
+```
+ExeJ
+...
+dependencies
+├──GLFW  (fetched)
+└──GLAD  (fetched)
+```
