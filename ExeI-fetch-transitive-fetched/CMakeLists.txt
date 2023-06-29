@@ -10,6 +10,8 @@ add_executable(
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
+set(DIR_LIBD ${CMAKE_SOURCE_DIR}/../dependencies/LibD)
+
 include(FetchContent)
 set(FETCHCONTENT_SOURCE_DIR_LIBD ${DIR_LIBD})
 FetchContent_Declare (

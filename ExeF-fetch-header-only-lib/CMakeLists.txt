@@ -10,8 +10,7 @@ add_executable(
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
-set(DIR_ROOT D:/Code/CMake/CMakeExeDependencies)
-set(DIR_LIBA ${DIR_ROOT}/dependencies/LibA)
+set(DIR_LIBA ${CMAKE_SOURCE_DIR}/../dependencies/LibA)
 
 include(FetchContent)
 set(FETCHCONTENT_SOURCE_DIR_LIBA ${DIR_LIBA})

@@ -10,13 +10,16 @@ Configure, generate and build CMake project of different complexities.
 
 
 **ExeA**
+
 Consists only of a single `main.cpp`.
  
 **ExeB**
-Cointains a header and source file in an `include` and a `src` directory respectively.
+
+Contains a header and source file in an `include` and a `src` directory respectively.
 
 **ExeC**
-Contains a header-only libary as a second built target.
+
+Contains a header-only library as a second built target.
 
 ```
 ExeC
@@ -24,16 +27,17 @@ ExeC
 ```
 
 **ExeD**
-Contains a header and source file libary with `include` and `src` directories as a second built target.
+
+Contains a header and source file library with `include` and `src` directories as a second built target.
 
 ```
 ExeD
-└──LibA
+└──LibB
 ```
 
 **ExeE**
-Include transitive libraries i.e. mutiple built targets.
 
+Include transitive libraries i.e. multiple built targets.
 ```
 ExeE
 └──LibC
@@ -42,35 +46,46 @@ ExeE
 ```
 
 **ExeF**
-Fetches a header-only library `LibA` from the `dependencies` directory.
 
+Fetches a header-only library `LibA` from the `dependencies` directory.
 ```
-cmake .. -U DIR_LIBA -D DIR_LIBA=D:/Code/CMake/CMakeExeDependencies/dependencies/LibA
+ExeF
+...
+dependencies
+└──LibA
 ```
 
 **ExeG**
-Fetches a library with header and source files `LibB`.
 
+Fetches a library with header and source files `LibB`.
 ```
-cmake .. -U DIR_LIBB -D DIR_LIBB=D:/Code/CMake/CMakeExeDependencies/dependencies/LibB
+ExeG
+...
+dependencies
+└──LibB     (fetched)
 ```
 
 **ExeH**
-Fetches transitive libraries `LibC/LibA` and `LibC/LibB`.
 
+Fetches transitive libraries `LibC/LibA` and `LibC/LibB`.
 ```
-cmake .. -U DIR_LIBC -D DIR_LIBC=D:/Code/CMake/CMakeExeDependencies/dependencies/LibC
+ExeH
+...
+dependencies
+└──LibC     (fetched)
+   ├──LibA  
+   └──LibB
 ```
+
 
 **ExeI**
+
 Fetches a transitive libraries `LibD` which itself fetches Libraries `LibA` and `LibB`.
 
-```
-cmake .. -U DIR_LIBA -D DIR_LIBA=D:/Code/CMake/CMakeExeDependencies/dependencies/LibA -U DIR_LIBB -D DIR_LIBB=D:/Code/CMake/CMakeExeDependencies/dependencies/LibB -U DIR_LIBD -D DIR_LIBD=D:/Code/CMake/CMakeExeDependencies/dependencies/LibD
-```
-
 **ExeJ**
-Fetch online repositories with CMake support: GLFW and GLAD
+
+Fetch online repositories with CMake support: [GLFW](https://github.com/glfw/glfw) and [GLAD](https://github.com/Dav1dde/glad)
 
 **ExeK**
-Fetch online cmake repositories without CMake support: Dear ImGui
+
+Fetch online cmake repositories without CMake support: [Dear ImGui](https://github.com/ocornut/imgui)
