@@ -1,6 +1,6 @@
 #include "FunA.h"
 
-char* name()
+const char* name()
 {
     return "FunA";
 }

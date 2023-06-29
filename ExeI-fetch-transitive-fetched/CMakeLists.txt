@@ -11,7 +11,7 @@ add_executable(
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 include(FetchContent)
-set(FETCHCONTENT_SOURCE_DIR_LIBD D:/Code/CMake/Own/dependencies/LibD)
+set(FETCHCONTENT_SOURCE_DIR_LIBD ${DIR_LIBD})
 FetchContent_Declare (
   LibD
 )

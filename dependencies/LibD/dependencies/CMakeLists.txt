@@ -4,13 +4,13 @@ include(FetchContent)
 
 # set(dependencies_source_dir)
 
-set(FETCHCONTENT_SOURCE_DIR_LIBA D:/Code/CMake/Own/dependencies/LibA)
+set(DIR_LIBA D:/Code/CMake/Own/dependencies/LibA)
 FetchContent_Declare (
     LibA
 )
 FetchContent_MakeAvailable(LibA)
 
-set(FETCHCONTENT_SOURCE_DIR_LIBB D:/Code/CMake/Own/dependencies/LibB)
+set(DIR_LIBB D:/Code/CMake/Own/dependencies/LibB)
 FetchContent_Declare (
     LibB
 )

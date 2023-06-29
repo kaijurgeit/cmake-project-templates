@@ -9,7 +9,7 @@
 
 int main()
 {
-    std::cout << "[C++.ExeJ] main.cpp" << "\n";
+    std::cout << "[C++.ExeK] main.cpp" << "\n";
 
     /*
     * Initialize GLFW window

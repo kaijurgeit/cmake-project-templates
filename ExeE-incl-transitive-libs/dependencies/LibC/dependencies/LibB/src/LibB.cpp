@@ -1,7 +1,7 @@
 #include "LibB.h"
 namespace LibB
 {
-    char* name()
+    const char* name()
     {
         return "LibB";
     }

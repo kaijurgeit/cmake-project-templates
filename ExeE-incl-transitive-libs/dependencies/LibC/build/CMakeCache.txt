@@ -209,7 +209,7 @@ FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
 // for LibA
-FETCHCONTENT_SOURCE_DIR_LIBA:PATH=
+DIR_LIBA:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF

@@ -2,7 +2,7 @@
 #define LIBA_H
 namespace LibA
 {
-    char* name()
+    const char* name()
     {
         return "LibA";
     }

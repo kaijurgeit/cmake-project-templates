@@ -12,13 +12,13 @@ target_include_directories(${PROJECT_NAME}
 
 include(FetchContent)
 
-set(FETCHCONTENT_SOURCE_DIR_LIBA D:/Code/CMake/Own/dependencies/LibA)
+set(FETCHCONTENT_SOURCE_DIR_LIBA ${DIR_LIBA})
 FetchContent_Declare (
     LibA
 )
 FetchContent_MakeAvailable(LibA)
 
-set(FETCHCONTENT_SOURCE_DIR_LIBB D:/Code/CMake/Own/dependencies/LibB)
+set(FETCHCONTENT_SOURCE_DIR_LIBB ${DIR_LIBB})
 FetchContent_Declare (
     LibB
 )
