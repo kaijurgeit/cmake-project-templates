@@ -1,13 +1,13 @@
 # CMake and C++ Project Templates
 
-Hi there! This repository contains 10 basic CMake project templates which you can use as a learning resource or as a starting point for your own projects. Each of the directories prefixed with `Exe` contains a root `CMakeLists.txt` file which generates an executable `ExeA` to `ExeJ` based on a different projects structures. Starting very simple with only one `main.cpp` file to slightly more complex examples that fetch other CMake projects which again depend on other CMake projects.
+Hi there! This repository contains 10 basic CMake project templates which you can use as a learning resource or as a starting point for your own projects. Each of the directories prefixed with `Exe` contains a root `CMakeLists.txt` file which generates an executable `ExeA` to `ExeJ` based on different projects structures. Starting very simple with only one `main.cpp` file to slightly more complex examples that fetch other CMake projects which again depend on other CMake projects.
 
 ## Prerequisites
 
 In order to build the projects you need:
 - CMake 3.20 or higher
 - a C++ compiler
-- Python, accessible through CMake (Config, system path)
+- Python, accessible through CMake (config, system path)
 
 I tested it using:
 - Windows 10
@@ -42,7 +42,7 @@ Run the executable, e.g.:
 
 ## Projects
 
-If you want to learn CMake, I recommend going through each project, one by one. Execute the commands above and inspect the CMakeLists.txt and the other files and folders. The projects are made as easy as possible. They are not more complex than necessary to achieve the goal of building simple projects and projects with (external) dependencies. 
+If you want to learn CMake, I recommend going through each project, one by one. Execute the commands above and inspect the `CMakeLists.txt` and the other files and folders. The projects are made as easy as possible. They are not more complex than necessary to achieve the goal of building simple projects and projects with (external) dependencies. 
 
 **ExeA**
 
@@ -58,7 +58,7 @@ Contains a header-only library as a second built target.
 
 ```
 ExeC
-└──LibA
+└──LibA (header-only)
 ```
 
 **ExeD**
@@ -67,7 +67,7 @@ Contains a header and source file library with `include` and `src` directories a
 
 ```
 ExeD
-└──LibB
+└──LibB (include and src directory)
 ```
 
 **ExeE**
@@ -87,7 +87,7 @@ Fetches a header-only library `LibA` from the `dependencies` directory.
 ExeF
 ...
 dependencies
-└──LibA
+└──LibA     (fetched)
 ```
 
 **ExeG**
